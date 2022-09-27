@@ -9,14 +9,14 @@ export default function Navbar() {
 
         return ( 
             <nav>
-                <div className="top-nav">
-                    <h1>My App</h1>
-                    <h3>Welcome {user.name}!</h3>
-                    <a href="/api/auth/logout">Logout</a> 
+                <div className="navbar">
+                    <p className="title">Wishful Wishlist</p>
+                    <p>Welcome, {user.name}!</p>
                 </div>
-                <div className="side-nav">
-                    <a href="index">Home</a>
+                <div className="sidenav">
+                    <a href="table">List</a>
                     <a href="pieChart">Pie Chart</a> 
+                    <a id="logout" href="/api/auth/logout">Logout</a> 
                 </div>
             </nav>
 
