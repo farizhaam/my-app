@@ -58,32 +58,41 @@ import {
 
   const data = {
     labels: [
-      'Red',
-      'Green',
-      'Yellow'
+      'Smartphones',
+      'Laptops',
+      'Fragrances',
+      'Skincares',
+      'Groceries',
+      'Home-Decors'
   ],
   datasets: [{
-    data: [300, 50, 100],
+    data: [3476, 5446, 216, 187, 164, 202],
     backgroundColor: [
-    '#FF6384',
-    '#36A2EB',
-    '#FFCE56'
+    '#18112C',
+    '#231942',
+    '#5E548E',
+    '#5E548E',
+    '#BE95C4',
+    '#E0B1CB',
     ],
     hoverBackgroundColor: [
-    '#FF6384',
-    '#36A2EB',
-    '#FFCE56'
+    '#291D49',
+    '#372768',
+    '#FFCE56',
+    '#BFAED6',
+    '#CEB1D3',
+    '#EED3E2'
     ]
   }]
   };
   
   export default () => (
-  <div>
-    <h2>Doughnut Example</h2>
+  <div className="container">
+    <h1>Expense Distribution</h1>
     <Doughnut
        data={data}
-       width={400}
-       height={400}
+       width={10}
+       height={10}
     />
   </div>
   );
