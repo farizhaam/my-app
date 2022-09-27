@@ -23,12 +23,12 @@ const Gadgets = ({ gadgets }) => {
           
 
           return (
-            <div>
-              <h1>Wishful Wishlist</h1>
+            <div className="container">
+              <h1>The Long List</h1>
 
               <div className="grid">
                 <div className="table-head">
-                  <h3>Name</h3>
+                  <h2>Name</h2>
                 </div>
 
                   {gadgets.products.map(gadget => (
@@ -74,7 +74,7 @@ const Gadgets = ({ gadgets }) => {
                 </div>
 
                   {gadgets.products.map(gadget => (
-                  <div key={gadget.id}>
+                  <div key={gadget.id} >
                     
                       <h4>${ gadget.price }</h4>
                     
@@ -84,8 +84,14 @@ const Gadgets = ({ gadgets }) => {
             </div>
           );
 
-        return <a href="login">Login</a>
+        
     }
+    return(
+      <div className="login">
+          <p className="super-title">Wishful Wishlist</p>
+          <a href="/api/auth/login" className="login-btn">Login</a>
+      </div>
+    )
   }
         
  
